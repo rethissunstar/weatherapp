@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    padding: 5px;
+    margin: 20px;
+}
+
+header{
+    background-color: rgb(165, 198, 165);
+    color: rgba(89, 0, 255, 0.555);
+    text-align: center;
+    background-image: linear-gradient(to right,white,green);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20%;
+    border-style: double;
+    font-weight: 300;
+    
+}
+#userentry{
+    background-color: rgb(97, 119, 244);;
+    height: 80px;
+    text-align: center;
+}
+#readout{
+    background-color: rgb(97, 119, 244);
+    flex: content;
+    justify-items: end;
+    text-align: center;
+}
+#sidebar{
+    background-color: rgb(97, 119, 244);
+    text-align: center;
+}
+#day1{
+    background-color: blue;
+    height: 300pt;
+}
+#day2{
+    background-color: red;
+}
+#day3{
+    background-color: blue; 
+}
+.dayPane{
+    border-radius: 10pt;
+    border-color: cornflowerblue;
+    background-image: linear-gradient(to right, rgb(85, 85, 241), grey);
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-style: groove;
+
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
