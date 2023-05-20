@@ -12,9 +12,9 @@ Done under the MIT license
 
 ## Location and GIthub
 https://rethissunstar.github.io/weatherapp/
-https://github.com/rethissunstar/weatherapp\
+https://github.com/rethissunstar/weatherapp
 
 
 
 ## Picture of deployed:
-<img href = "assets\screenshotofProduction.png"><img>
+<img src = "assets\screenshotofProduction.png"><img>
