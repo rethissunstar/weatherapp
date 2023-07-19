@@ -7,14 +7,32 @@ let lon = '-79.4163';
 let lat = '43.7001';
 let day1pane = document.getElementById('day1');
 let dayFind= document.getElementById('day'+1);
-fetch('https://api.openweathermap.org/geo/1.0/direct?q=Toronto&limit=5&appid='+apiKey)
-    .then(function (response){
-        console.log(response);
-        return response.json;
-    })
-    .then(function(data){
-        console.log(data);
-    })
+// fetch('https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/forecast?appid='+apiKey,{
+//     headers: {
+//         'Content-Type': 'application/json',
+//         'Access-Control-Allow-Origin': '*'
+//     }
+// })
+
+    // .then(function (response){
+    //     console.log(response);
+    //     // return response;
+    // })
+    // .then(function(data){
+    //     console.log(data);
+    // })
+
+//from the analysis 
+var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
+  
+  fetch("https://api.openweathermap.org/geo/1.0/direct?q=Toronto,CA&limit=5&appid=8822afbe38e751d526fa225aa1e81c83", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+  
 
 fetch("https://api.openweathermap.org/data/2.5/forecast?units=metric&lat=" +lat +"&"+"lon="+lon+"&appid=" +  apiKey)
     .then(function (response){

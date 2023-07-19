@@ -16,16 +16,24 @@
             This is the weather!
         </h1>
     </header>
-    <div class="row">
-        <div class="col-6" id="userentry">
-            What city do you seek?
+    <div class="row-12">
+        <div class="col-12" id="userentry">
+            
             <section>
                 <form action="">
+                    What city do you seek?
                     <input type="text">
                 </form>
+                
+                <div class="col-6" id ="countryCode"></div>
+                <form action="">
+                    What is the country code:
+                    <input type="text">
+                </form>
+                <button id="button">Go</button>
             </section>
         </div>
-        <div class="col-6" id="readout">
+        <div class="row" id="readout">
             This could be the time and date
         </div>
 
