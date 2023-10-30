@@ -1,47 +1,131 @@
-body{
+* {
+  box-sizing: border-box;
+}
+@media screen and (min-width: 0) and (max-width: 800px) {
+  header {
+    background-color: black;
+    color: aqua;
+    text-shadow: 2px 2px 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    width: 100%;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 20pt;
+  }
+  #readout {
+    background-color: black;
+    color: aqua;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #readout p {
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Set font color to white */
+    text-shadow: 0px 2px 2px aqua; /* Add an aqua glow effect */
+  }
+  #card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .dayPane {
+    /* border-radius: 10pt; */
+    border-color: cornflowerblue;
+    background-image: linear-gradient(to right, rgb(85, 85, 241), grey);
+    display: flex;
+    /* flex: auto; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-style: groove;
+    width: 100%;
+    font-size: 20pt;
+  }
+}
+@media screen and (min-width: 801px) {
+  body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
-    padding: 5px;
-    margin: 20px;
-}
+  }
+  header {
+    background-color: black;
+    color: aqua;
+    text-shadow: 2px 2px 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-header{
-    background-color: rgb(165, 198, 165);
-    color: rgba(89, 0, 255, 0.555);
-    text-align: center;
-    background-image: linear-gradient(to right,white,green);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 20%;
-    border-style: double;
-    font-weight: 300;
-    
-}
-#userentry{
-    background-color: rgb(97, 119, 244);;
-    height: 80px;
-    text-align: center;
-}
-#readout{
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 20pt;
+  }
+  #readout {
+    background-color: black;
+    color: aqua;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #readout p {
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Set font color to white */
+    text-shadow: 0px 2px 2px aqua; /* Add an aqua glow effect */
+  }
+  #sidebar {
     background-color: rgb(97, 119, 244);
-    flex: content;
-    justify-items: end;
     text-align: center;
-}
-#sidebar{
-    background-color: rgb(97, 119, 244);
-    text-align: center;
-}
-#day1{
+  }
+  #day1 {
     background-color: blue;
     height: 300pt;
-}
-#day2{
+  }
+  #day2 {
     background-color: red;
-}
-#day3{
-    background-color: blue; 
-}
-.dayPane{
+  }
+  #day3 {
+    background-color: blue;
+  }
+  .dayPane {
     border-radius: 10pt;
     border-color: cornflowerblue;
     background-image: linear-gradient(to right, rgb(85, 85, 241), grey);
@@ -51,9 +135,9 @@ header{
     text-align: center;
     color: white;
     border-style: groove;
-
-}
-ul{
+  }
+  ul {
     list-style-type: none;
     text-align: center;
+  }
 }
