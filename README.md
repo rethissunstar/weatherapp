@@ -4,8 +4,8 @@ This is an app that will tell me the next 5 days of weather - let it be more acc
 
 ## Picture of deployed:
 
-<img src = "assets\updatedmobile.png"><img>
-<img src = "assets\updatedDesktop.png"><img>
+<img src = "assets\upddatedmobile.png"><img>
+<img src = "assets\upddatedDesktop.png"><img>
 
 ## Installation/use
 
